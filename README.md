@@ -1,16 +1,13 @@
-## Hi there 👋
+# Halo semua! 
 
-<!--
-**alf1001/alf1001** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Perkenalkan nama saya **Ahmad Alfin Nur Hakim**.<br>
 
-Here are some ideas to get you started:
+Saya seorang **Mahasiswa Informatika** di [Untirta](https://untirta.ac.id/).<br>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Saya saat ini sedang menempuh sarjana pada program studi Informatika di universitas sultan ageng tirtayasa<br>
+
+Saya telah menyelesaikan beberapa course Digitalent Scholarship yakni:<br>
+- Data analytics for Business<br>
+- Database Design & Database Programming with SQL<br>
+
+Jika kamu tertarik untuk berkenalan denganku, silakan ikuti akun [Linkedin](https://www.linkedin.com/in/ahmadalfinnurhakim/) ku ya.
