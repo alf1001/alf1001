@@ -1,16 +1,16 @@
-# Halo semua! 
+# Hello Everyone! 
 
-Perkenalkan nama saya **Ahmad Alfin Nur Hakim**.<br>
+My name is **Ahmad Alfin Nur Hakim**. You can call me Alfin.<br>
 
-Saya seorang **Mahasiswa Informatika** di [Untirta](https://untirta.ac.id/).<br>
+I am a **Informatics Student** at [Untirta](https://untirta.ac.id/).<br>
 
-Saya saat ini sedang menempuh sarjana pada program studi Informatika di universitas sultan ageng tirtayasa<br>
+Currently I'm pursuing a bachelor's degree in Informatics at Sultan Ageng Tirtayasa University<br>
 
-Saya telah menyelesaikan beberapa course Digitalent Scholarship yakni:<br>
-- Data analytics for Business<br>
+I have completed several Digitalent Scholarship courses, namely: <br>
+- Data analytics for Business <br>
 - Database Design & Database Programming with SQL<br>
 
-Jika kamu tertarik untuk berkenalan denganku, silakan ikuti akun [Linkedin](https://www.linkedin.com/in/ahmadalfinnurhakim/) ku ya.
+If you are interested in getting to know me, please follow my account [Linkedin](https://www.linkedin.com/in/ahmadalfinnurhakim/).
 
 ### Github Statistic
 <p align="left">
