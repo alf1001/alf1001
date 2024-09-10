@@ -1,6 +1,6 @@
 # Hello Everyone! 
 
-My name is **Ahmad Alfin Nur Hakim**. You can call me Alfin.<br>
+My name is **Ahmad Alfin Nur Hakim**.<br>
 
 I am a **Informatics Student** at [Untirta](https://untirta.ac.id/).<br>
 
