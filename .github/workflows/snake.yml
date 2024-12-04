@@ -1,54 +1,80 @@
-name: Generate Snake
+name: GitHub Snake Game
 
 on:
+
+  # Schedule the workflow to run daily at midnight UTC
+
   schedule:
-    # Menjadwalkan untuk dijalankan setiap 6 jam
-    - cron: "0 */6 * * *"
+
+    - cron: "0 0 * * *"
 
   # Menjalankan secara manual dari tab Actions
   workflow_dispatch:
+  push:
 
+    branches:
+
+      - main
 jobs:
-  build:
+
+  generate:
+
     runs-on: ubuntu-latest
 
+    timeout-minutes: 10
+
     steps:
-      # Checkout repository agar bisa bekerja dengan file-file di repo
-      - uses: actions/checkout@v2
 
-      # Menggunakan Platane untuk menghasilkan snake GIF dan SVG
-      - uses: Platane/snk@master
-        id: snake-gif
+      # Step 1: Checkout the repository
+
+      - name: Checkout Repository
+
+        uses: actions/checkout@v3
+
+
+
+      # Step 2: Generate the snake animations
+
+      - name: Generate GitHub Contributions Snake Animations
+
+        uses: Platane/snk@v3
+
         with:
-          github_user_name: alf1001
-          gif_out_path: dist/github-contribution-grid-snake.gif
-          svg_out_path: dist/github-contribution-grid-snake.svg
 
-      # Menampilkan status Git untuk debugging
-      - run: git status
+          # GitHub username to generate the animation for
 
-      # Commit perubahan di branch output
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Generate contribution snake"
-        continue-on-error: true  # Jangan error jika tidak ada perubahan
+          github_user_name: ${{ github.repository_owner }}
 
-      # Push ke branch `output`
-      - name: Push changes to output branch
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: output  # Push ke branch output, bukan main
-          force: true
 
-      # Men-deploy hasilnya ke GitHub Pages atau ke direktori lain jika diperlukan
-      - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2.1.3
-        with:
-          target_branch: output  # Menggunakan branch output untuk deploy
-          build_dir: dist
+
+          # Define the output files and their configurations
+
+          outputs: |
+
+            dist/github-snake.svg
+
+            dist/github-snake-dark.svg?palette=github-dark
+
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
         env:
+
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Step 3: Deploy the generated files to the 'output' branch
+
+      - name: Deploy to Output Branch
+
+        uses: peaceiris/actions-gh-pages@v3
+
+        with:
+
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+          publish_dir: ./dist
+
+          publish_branch: output
+
+          # Optionally, you can set a custom commit message
+
+          commit_message: "Update snake animation [skip ci]"
+      
