@@ -19,3 +19,5 @@ If you are interested in getting to know me, please follow my account [Linkedin]
   <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=dimasmds&layout=compact&langs_count=8&theme=algolia"/>
 </a>
 </p>
+
+![snake gif](https://github.com/alf1001/alf1001/blob/output/github-snake-dark.svg)
